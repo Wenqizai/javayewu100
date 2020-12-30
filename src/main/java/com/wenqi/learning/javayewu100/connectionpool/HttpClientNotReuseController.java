@@ -72,8 +72,7 @@ public class HttpClientNotReuseController {
 
     @GetMapping("right")
     public String right() {
-        try (CloseableHttpResponse response = httpClient.execute(new HttpGet("http://127.0.0" +
-                ".1:8070/httpclientnotreuse/test"))) {
+        try (CloseableHttpResponse response = httpClient.execute(new HttpGet("http://127.0.0.1:8070/httpclientnotreuse/test"))) {
             return EntityUtils.toString(response.getEntity());
         } catch (Exception ex) {
             ex.printStackTrace();
