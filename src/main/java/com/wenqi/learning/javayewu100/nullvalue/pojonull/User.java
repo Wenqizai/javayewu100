@@ -1,8 +1,13 @@
 package com.wenqi.learning.javayewu100.nullvalue.pojonull;
 
 import lombok.Data;
+import org.hibernate.annotations.Entity;
+import org.springframework.data.annotation.Id;
 
 import javax.persistence.GeneratedValue;
+import java.util.Date;
+
+import static javax.persistence.GenerationType.IDENTITY;
 
 /**
  * @author liangwq
